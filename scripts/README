@@ -1,0 +1,8 @@
+## Manage JS scripts in your local instance :
+- copy all js script in : YOUR_GALAXY_PATH/static/scripts/libs/outputs/
+- edit path contained in CONF file (Concerning tools : hmdb, hr2, lipidmaps...)
+	Example for lipidmaps.conf :
+	# Galaxy url for HTML JS path 
+	JS_GALAXY_PATH=http://MY_HOSTENAME.fr/static/scripts/libs/outputs
+
+- This html functionality will be run ONLY if the sanitize_all_html option in universe_wsgi.ini file is uncomment and set to FALSE.
